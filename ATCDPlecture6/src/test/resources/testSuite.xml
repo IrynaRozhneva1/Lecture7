@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Page Factory Test" parallel="false" thread-count="5">
+<parameter name="username1" value="IrynaATCDP"></parameter>
+<parameter name="password1" value="123456qw"></parameter>
+<parameter name="username2" value="IrynaATCDP1"></parameter>
+<parameter name="password2" value="123456zx"></parameter>
+<parameter name="recipientEmail" value="IrynaATCDP1@yandex.ru"></parameter>
+<parameter name="subject1" value="Subj1 test"></parameter>
+<parameter name="subject2" value="Subj2 test"></parameter>
+<parameter name="messageText" value="Hello my friend!"></parameter>
+  <listeners>
+    <listener class-name="listeners.Listener" />
+  </listeners>
+	<test name="Page Factory Test">
+		<classes>
+			<class name="tests.PageFactoryTest" />
+		</classes>
+	</test>
+
+</suite>
